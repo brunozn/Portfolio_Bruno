@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="" title="" src="https://github.com/brunozn/Portfolio_Bruno/blob/master/img/Pessoais/home.png" width="600" /><br>
+<img alt="" title="" src="https://github.com/brunozn/Portfolio_Bruno/blob/master/img/Pessoais/home.png" width="700" /><br>
   <!-- trocar: 'você pode colocar uma imagem (logo) que represente seu projeto (visualmente) -->
 </h1>
 
@@ -25,7 +25,6 @@ Tecnologias ultilizadas no projeto:
 
 ## Projeto
 
-Projeto Mates of Places
 Esse repositório tem como objetivo armarzenar um portfólio pessoal feito em HTML,CSS e Javascript. O intuito desse portifolio é expor as tecnologias de interesse, com uma rápida descrição pessoal, divulgar alguns trabalhos e finalmente informações para contato. 
 
 
