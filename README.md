@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="" title="" src="https://github.com/brunozn/Portfolio_Bruno/blob/master/img/Pessoais/home.png" width="700" /><br>
+<img alt="" title="" src="https://github.com/brunozn/Portfolio_Bruno/blob/master/public/img/Pessoais/home.png" width="700" /><br>
   <!-- trocar: 'você pode colocar uma imagem (logo) que represente seu projeto (visualmente) -->
 </h1>
 
