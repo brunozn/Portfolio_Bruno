@@ -5,23 +5,22 @@
 }
 
 /* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Lora', serif;
     --ff-secondary: 'Roboto Slab', serif;
     
-    --fw-reg: 400;
-    --fw-bold: 700;
+    --fontw-reg: 400;
+    --fontw-bold: 700;
     
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #026299;
     --clr-cin: #f0f3f5;
 
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+    --fontS-h1: 3rem;
+    --fontS-h2: 2.25rem;
+    --fontS-h3: 1.25rem;
+    --fontS-body: 1rem;
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -29,10 +28,10 @@
 
 @media (min-width: 800px) {
     :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
+        --fontS-h1: 4.5rem;
+        --fontS-h2: 3.75rem;
+        --fontS-h3: 1.5rem;
+        --fontS-body: 1.125rem;
     }
 }
 
@@ -49,7 +48,7 @@ body {
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
-    font-size: var(--fs-body);
+    font-size: var(--fontS-body);
     line-height: 1.6;
 }
 
@@ -63,27 +62,30 @@ img {
     max-width: 100%;
 }
 
-strong { font-weight: var(--fw-bold) }
+strong { font-weight: var(--fontw-bold) }
 
 :focus {
     outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+    outline-offontSet: 3px;
 }
 
 
 /* nAVEBAR*/
 /* Circle behind */
 
-div.container
-{
+div.container{
     font-family: Raleway;
     margin: 0 auto;
-
 	text-align: center;
 }
+@media(max-width:600px){
+    div.container{
+        font-size: 5px;
+        margin-right: 12%;
+    }
+}
 
-div.container a
-{
+div.container a{
     color: #0277bd;
     text-decoration: none;
     font: 20px Raleway;
@@ -93,6 +95,13 @@ div.container a
     z-index: 0;
     cursor: pointer;
 }
+
+@media(max-width: 600px){
+    div.container a{
+        display: none; 
+    }
+}
+
 div.circleBehind a:before, div.circleBehind a:after
 {
     position: absolute;
@@ -141,7 +150,7 @@ div.circleBehind a:hover:after
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: var(--fw-bold);
+    font-weight: var(--fontw-bold);
     transition: transform 200ms ease-in-out;
 }
 
@@ -158,9 +167,9 @@ h3 {
     margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
+h1 { font-size: var(--fontS-h1) }
+h2 { font-size: var(--fontS-h2) }
+h3 { font-size: var(--fontS-h3) }
 
 
 .section__title {
@@ -169,16 +178,35 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__title--intro {
-    font-weight: var(--fw-reg);
+    font-weight: var(--fontw-reg);
 }
 
-.section__title--intro strong {
+.section__title--intro .strong {
     display: block;
+    font-weight: bold;
+}
+
+
+.strong::after{
+    content: '|';
+    margin-left: 3px;
+    opacity: 1;
+    animation:  pisca .7s infinite;
+}
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+
 }
 
 .section__subtitle {
     margin: 0;
-    font-size: var(--fs-h3);
+    font-size: var(--fontS-h3);
 }
 
 .section__subtitle--intro,
@@ -192,7 +220,7 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle--work {
     color: var(--clr-accent);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fontw-bold);
     margin-bottom: 2em;
 }
 
@@ -235,8 +263,8 @@ header {
 
 .nav__link {
     color: inherit;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
+    font-weight: var(--fontw-bold);
+    font-size: var(--fontS-h2);
     text-decoration: none;
 }
 
@@ -256,11 +284,13 @@ header {
 }
 
 .nav-open .nav {
-    transform: translateX(0);
+    transform: translateX(90);
+    max-width: 50%;
 }
 
 .nav-open .nav-toggle {
     position: fixed;
+
 }
 
 .nav-open .hamburger {
@@ -487,8 +517,8 @@ header {
     background: #111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 4.5em 0;
-    font-size: var(--fs-h3);
+    padding: 1em 0;
+    font-size: var(--fontS-h3);
 
 }
 
@@ -498,7 +528,7 @@ header {
 }
 
 .footer__link {
-    font-weight: var(--fw-bold);
+    font-weight: var(--fontw-bold);
 }
 
 .footer__link:hover,
