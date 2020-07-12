@@ -20,7 +20,7 @@
     --fontS-h1: 3rem;
     --fontS-h2: 2.25rem;
     --fontS-h3: 1.25rem;
-    --fontS-body: 1rem;
+    
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -66,7 +66,7 @@ strong { font-weight: var(--fontw-bold) }
 
 :focus {
     outline: 3px solid var(--clr-accent);
-    outline-offontSet: 3px;
+   /* outline-offontSet: 3px; */
 }
 
 
@@ -238,7 +238,7 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
+    background: #0277bd;
     color: var(--clr-light);
     top: 0;
     bottom: 0;
@@ -265,7 +265,12 @@ header {
     color: inherit;
     font-weight: var(--fontw-bold);
     font-size: var(--fontS-h2);
+    @media(max-width: 600px;){
+        font-weight: var(--fontw-bold);
+        font-size: var(--fontS-body); 
+    }
     text-decoration: none;
+    text-align: center;
 }
 
 .nav__link:hover {
@@ -342,6 +347,7 @@ header {
 
 .intro {
     position: relative;
+    height: 100%;
 }
 
 .intro__img {
@@ -388,7 +394,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/cup.jpg);
+    background-image: url(../img/fundo.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
@@ -479,13 +485,22 @@ header {
 
 .my-work {
     background-color: var(--clr-dark);
+    background-image: url(../img/fundo.jpg);
     color: var(--clr-light);
     text-align: center;    
 }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+}
+
+.works__item{
+    margin: 30px 100px;
+    @media(max-width: 600px;){
+        margin: 0px;
+    }
 }
 
 .portfolio__item {
@@ -514,7 +529,7 @@ header {
 /* footer */
 
 .footer {
-    background: #111;
+    background: #ffffff;
     color: var(--clr-accent);
     text-align: center;
     padding: 1em 0;
@@ -570,3 +585,62 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+  .circle, .triangle{
+    position: static;
+    display:block;
+  }
+  
+  .circle{
+    border-radius:10%;
+    -webkit-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1);
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+  
+  .circle:hover{
+    -webkit-transform:scale(1.4);
+    -ms-transform:scale(1.4);
+    transform:scale(1.4);
+  }
+  
+  .circle:nth-child(1){
+    width:30px;
+    height:30px;
+    border:3px solid rgb(197, 24, 24);
+    top:150px;
+    left:-100px;
+    border-radius:50%;
+  }
+  
+  .circle:nth-child(2){
+    width:120px;
+    height:120px;
+    right:90px;
+    top:80px;
+    background: darkgoldenrod;
+  }
+  
+  .circle:nth-child(3){
+    width:80%;
+    height:80%;
+    /*right:300px;
+    bottom:-90px;
+    */
+    border:3px solid #334342;
+    padding: 15px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  
+  .circle:nth-child(4){
+    width:50px;
+    height:50px;
+    left:390px;
+    top:50px;
+    background: darkgreen;
+  }

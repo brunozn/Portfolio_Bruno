@@ -62,6 +62,8 @@
     </section>
 
 
+
+
     <!-- My services -->
     <section class="my-services" id="services">
         <h2 class="section__title section__title--services">TECNOLOGIAS</h2>
@@ -94,20 +96,24 @@
 
     <!-- About me -->
     <section class="about-me" id="about">
+
         <h2 class="section__title section__title--about">Quem eu sou</h2>
+
         <p class="section__subtitle section__subtitle--about">Engenheiro de Computação e Aspirante do Desenvolvimento
             Web</p>
-
-        <div class="about-me__body">
-            <p>Bacharel em Ciência e Tecnologia pela Universidade Federal Rural do Semi-Árido (UFERSA) - Campus Pau dos
-                Ferros/RN. Também sou Engenheiro de Computação pela UFERSA. Um pouco perdido neste mundo gigantesco de
-                desenvolvimento, mas em busca de aprender novas tecnologias. Um engenheiro com muitas idéias e
-                planejando transformá-las em linhas de código.</p>
-            <!--
+        <div class="circle">
+            <div class="about-me__body">
+                <p>Bacharel em Ciência e Tecnologia pela Universidade Federal Rural do Semi-Árido (UFERSA) - Campus Pau
+                    dos
+                    Ferros/RN. Também sou Engenheiro de Computação pela UFERSA. Um pouco perdido neste mundo gigantesco
+                    de
+                    desenvolvimento, mas em busca de aprender novas tecnologias. Um engenheiro com muitas idéias e
+                    planejando transformá-las em linhas de código.</p>
+                <!--
                <p>Bachelor of Science and Technology from UFERSA - Campus Pau dos Ferros / RN. I am also a Computer Engineer at UFERSA / PDF. A little lost in this gigantic world of development, but in search of learning new technologies. An engineer with lots of ideas and planning to turn them into lines of code.</p>
                 -->
+            </div>
         </div>
-
         <img src="../../public/img/Pessoais/bruno_sobre.JPG" alt="" class="about-me__img">
     </section>
 
@@ -120,29 +126,37 @@
 
         <div class="portfolio">
             <!-- Portfolio item 01 -->
-            <a href="../../src/pages/portfolio-item.html#intro1" class="portfolio__item">
-                <img src="../../public/img/Pessoais/hm1.png" alt="" class="portfolio__img">
-            </a>
+            <div class="works__item">
+                <a href="../../src/pages/portfolio-item.html#intro1" class="portfolio__item">
+                    <img src="../../public/img/Pessoais/hm1.png" alt="" class="portfolio__img">
+                </a>
+            </div>
+
 
             <!-- Portfolio item 02 -->
-            <a href="../../src/pages/portfolio-item.html#intro2" class="portfolio__item">
-                <img src="../../public/img//Pessoais/tsee.png" alt="" class="portfolio__img">
-            </a>
-
+            <div class="works__item">
+                <a href="../../src/pages/portfolio-item.html#intro2" class="portfolio__item">
+                    <img src="../../public/img//Pessoais/tsee.png" alt="" class="portfolio__img">
+                </a>
+            </div>
             <!-- Portfolio item 03 -->
-            <a href="../../src/pages/portfolio-item.html#intro3" class="portfolio__item">
-                <img src="../../public/img/Pessoais/login.png" alt="" class="portfolio__img">
-            </a>
+            <div class="works__item">
+                <a href="../../src/pages/portfolio-item.html#intro3" class="portfolio__item">
+                    <img src="../../public/img/Pessoais/login.png" alt="" class="portfolio__img">
+                </a>
+            </div>
 
             <!-- Portfolio item 04 -->
-            <a href="../../src/pages/portfolio-item.html#intro4" class="portfolio__item">
-                <img src="../../public/img/Pessoais/ux.png" alt="" class="portfolio__img">
-            </a>
-
+            <div class="works__item">
+                <a href="../../src/pages/portfolio-item.html#intro4" class="portfolio__item">
+                    <img src="../../public/img/Pessoais/ux.png" alt="" class="portfolio__img">
+                </a>
+            </div>
 
 
         </div>
     </section>
+
 
 
     <!-- Footer -->
@@ -195,18 +209,11 @@
             elemento.innerHTML = '';
             textoArray.forEach((letra, i) => {
                 setTimeout(() => {
-                elemento.innerHTML += letra;
+                    elemento.innerHTML += letra;
                 }, time * i)
                 console.log(letra);
             });
         }
-
-        //const title1 = document.querySelector(".section__title");
-        const title = document.querySelector(".hello");
-        const subtitle = document.querySelector(".strong");
-        typeWrite(title, 60);
-        typeWrite(subtitle, 110);
-
     </script>
 
 
