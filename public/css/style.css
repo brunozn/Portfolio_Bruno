@@ -35,14 +35,6 @@
     }
 }
 
-/* General styles */
-
-/* endable this to add smooth scrolling */
-/* html {
-    scroll-behavior: smooth;
-} */
-
-
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -60,6 +52,12 @@ section {
 img {
     display: block;
     max-width: 100%;
+}
+
+@media(max-width: 600px){
+    img{
+    max-width: 100%;
+    }
 }
 
 strong { font-weight: var(--fontw-bold) }
@@ -489,19 +487,28 @@ header {
 .my-work {
     background-color: var(--clr-accent);
     color: var(--clr-light);
-    text-align: center;    
 }
 
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
 
+@media(max-width: 600px){
+    .portfolio{
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
 }
 
 .works__item{
     margin: 30px 100px;
-    @media(max-width: 600px;){
-        margin: 0px;
+}
+
+@media(max-width: 600px){
+    .works__item{
+    margin: 30px 0px;
+    width: 100%;
     }
 }
 
