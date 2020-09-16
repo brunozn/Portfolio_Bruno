@@ -13,6 +13,7 @@ const menu = [
     img: '../../public/img/Pessoais/spotify.png',
     desc: `O sistema é um gerenciador de pagamentos de planos colaborativos.`,
   },
+  /*
   {
     id: 3,
     title: 'Flutter',
@@ -20,12 +21,13 @@ const menu = [
     img: '../../public/img/Pessoais/login.png',
     desc: `Descrição do projeto será aquilllllllllllllllllllllllllll`,
   },
+  */
   {
     id: 4,
     title: 'Conversor de Arquivos',
     category: 'Python',
     img: '../../public/img/Pessoais/ux.png',
-    desc: `Descrição do projeto llllllllllllllllllllll`,
+    desc: `Conversor de arquivos PDF feito em Python e utilizando o Tk/Tcl`,
   },
 ];
 // get parent element
