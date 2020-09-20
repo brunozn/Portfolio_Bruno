@@ -159,6 +159,15 @@ div.circleBehind a:hover:after
     transform: scale(1.1);
 }
 
+.btn_blue{
+    background: var(--clr-accent); 
+    color: var(--clr-light);
+
+}
+
+
+
+
 /* Typography */
 
 h1,
@@ -222,7 +231,7 @@ h3 { font-size: var(--fontS-h3) }
 
 /* header */
 
-header {
+.header_home {
     display: flex;
     justify-content: space-between;
     padding: 0.5em 1em 0.5em 1em;
@@ -713,3 +722,59 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+
+.body_curriculum{
+    background-color:#026299;
+}
+
+.header_curriculum{
+    display: grid;
+    grid-template: row;
+    background-color: #ffffff;
+    margin: 20px 30px 0px 0px;
+    border-radius:  0 60px 60px 0;
+    align-items: center;
+}
+
+.my_name{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color:#026299;
+    border-bottom-left-radius:solid  pink 1px;
+}
+
+#description_curriculum{
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+
+
+
+
+@media(max-width: 800px){
+    .my_name{
+    font-size: 2rem;
+}
+#description_curriculum{
+    font-size: 1.5rem;
+}
+}
+
+@media(max-width: 600px){
+    .my_name{
+    font-size: 1.5rem;
+}
+#description_curriculum{
+    padding-top: 5px;
+    font-size: 1rem;
+}
+}
+
+
+
+
+ 
